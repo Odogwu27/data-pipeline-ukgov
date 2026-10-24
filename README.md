@@ -1,32 +1,13 @@
-# Automated Azure Cloud ETL Data Pipeline Platform
+# Multi-Cloud Data Engineering Platform: Automated UK Gov Ingestion & Data Warehousing
+An end-to-end modern data platform orchestrating automated batch data pipelines, enterprise-grade credential isolation, multi-cloud relational warehousing, and centralized corporate data governance framework structures across Microsoft Azure and Snowflake.
 
-## 📌 Project Overview
-An enterprise-grade, decoupled Data Engineering pipeline designed to automatically extract, load, and verify semi-structured public service data feeds. This platform transitions manual data ingestion workflows into an automated cloud data lakehouse architecture, utilizing secure IAM protocols and local task orchestration to ensure consistent data delivery.
+## 🏛️ Enterprise Architecture Overview
+*   *Orchestration & Ingestion:* Configured serverless ingestion workflows via *Azure Data Factory (ADF)* to pull multi-line JSON datasets natively from the UK Gov public REST API into an enterprise data lake container.
+*   *Security & Identity Governance:* Hardened the cloud infrastructure network perimeter using *Azure Key Vault. Isolated access token strings under strict **Azure Role-Based Access Control (RBAC)* policies using custom Key Vault Secrets Officer identity clearances.
+*   *Cloud Data Warehousing:* Built an enterprise relational analytics engine within *Snowflake* to handle complex sharded analytics data. Implemented a secure cloud-native *External Stage Bridge* using Azure SAS tokens to automatically map and bulk-ingest raw files cleanly via bulk COPY INTO SQL script streams.
+*   *Central Data Governance:* Deployed *Microsoft Purview* within the local region network pool to ensure complete end-to-end transactional compliance, asset mapping, data lineage, and metadata discovery patterns across corporate files.
 
-## 🏗️ Architecture Blueprint
-[ 1. Data Origin ]       ──►   
-[ 2. Processing Engine ]   ──►  
-[ 3. Target Cloud Data Lake ]
-Official UK Gov API             Python 3.13 Runtime               Azure Blob Storage Account
-(Semi-Structured JSON)         Local Task Scheduler CLI           Container: raw-data-landing
-
-## 🛠️ Tech Stack & Cloud Infrastructure Matrix
-* **Cloud Infrastructure Environment:** Microsoft Azure Platform
-* **Object Storage Layer (Data Lake):** Azure Blob Storage (Staging Drop-Zone Container Network)
-* **Secure Access Protocol:** Identity Access Management (IAM) Shared Cryptographic Connection Strings
-* **Core Scripting Language Engine:** Python 3.13 Runtime Environment
-* **External Core Library Dependencies:** `requests` (API Handshakes), `json` (Data Serialization), `azure-storage-blob` (Cloud SDK Contexts)
-* **Pipeline Orchestrator & Monitor:** Windows Task Scheduler Engine
-
-## ⚙️ Core Engineering Pipeline Workflows
-1. **Data Ingestion (Extract & Load):** Programmatic HTTP get requests query the endpoint to grab live JSON payloads. The system enforces an *Idempotent file-naming convention* using dynamic execution timestamps (`YYYYMMDD_HHMMSS`) to prevent tracking record overwrites.
-2. **Cloud Security Handshake:** Connections to the target storage lake are completely decoupled from local hard drives. The script utilizes isolated environment parameters to negotiate encrypted data transfers straight to the cloud staging zone.
-3. **Automated Orchestration:** A localized task engine runs background cron-style executions to trigger pipeline instances cleanly at scheduled intervals, eliminating manual runtime requirements.
-4. **Schema-On-Read Verification:** Raw landing objects maintain structural integrity formats, rendering clear database schema profiles directly compatible with downstream analytical query tools (T-SQL, Synapse, Power BI).
-
-## 🚀 Key Professional Skills Demonstrated
-* **Cloud Systems Architecture & Operations (DevOps)**
-* **Identity Access Management (IAM) Security Implementations**
-* **Semi-Structured Data Handling & Parsing (JSON Objects)**
-* **Decoupled System Architecture Design Principles**
-* **Automated Data Pipeline Scheduling & Orchestration**
+## 🚀 Key Engineering Milestones Cleared
+1.  *Production Credential Isolation:* Eliminated raw text passwords from cloud codes by establishing automated secret-fetching parameters via enterprise vaults.
+2.  *Infrastructure Pivot Agility:* Successfully managed cloud vendor subscription and regional quota limits by pivoting compute resources smoothly over to multi-cloud server configurations (Snowflake) with zero network data loss.
+3.  *Regional Network Optimization:* Co-located core tracking layers inside the local UK South data hubs to lower operational network latency and completely remove cross-region traffic costs.
